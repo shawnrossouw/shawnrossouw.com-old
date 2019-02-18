@@ -1,0 +1,6 @@
+@import '../css/header.css';
+@import '../css/footer.css';
+
+body{
+    background: #000;
+}
