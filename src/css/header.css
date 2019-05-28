@@ -4,6 +4,7 @@
 ****************************/
 
 .header {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,9 +46,9 @@
 
     &-logo{
         width: 250px;
-        background-color: #3f3d3d;
-        box-shadow: inset 0 0 25px #000000;
-        background-size: 200px;
+        // background-color: #3f3d3d;
+        // box-shadow: inset 0 0 25px #000000;
+        // background-size: 200px;
         padding: 2em;
         border-radius: 10px;
         @media all and (min-width: 768px){
@@ -67,10 +68,32 @@
         color: orchid;
         text-align: justify;
         background-color: #3f3d3d;
-        box-shadow: inset 0 0 15px #000000;
+        box-shadow: inset 0 0 20px #000000;
         padding: 1em;
         border-radius: 10px;
-    }  
+        z-index: 2;
+    }
+    
+    &-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+
+        &-img{
+            width: 50px;
+            margin: 0 1em;
+        }
+    }
+
+    &-corner-blob{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+        z-index: 1;
+
+    }
 }
 
 
